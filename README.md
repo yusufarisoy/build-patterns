@@ -22,3 +22,10 @@ Bazı özellikler tercihe bağlı bırakılmak istenirse Fabrika yordamları bun
 Ayrıca tercihe bağlı özellikler için Kurucu sınıf metotlara sahip olmalıdır.
 
 
+![BuilderDesignClass](https://github.com/yusufarisoy/yazilim-mimarisi-ve-tasarimi/blob/master/BuilderDesignPatternClass.png)
+
+Örnek uygulamanın sınıf diyagramı yukarıda verilmiştir. Bir Bilgisayar sınıfı oluşturulmuş ve bir de statik BilgisayarKurucu sınıfı oluşturulmuştur. Nesne yaratma işlemini gerekli ve isteğe bağlı parametrelerle kurucu sınıf oluşturmaktadır.
+
+![BuilderDesignKur](https://github.com/yusufarisoy/yazilim-mimarisi-ve-tasarimi/blob/master/builderKur.png)
+
+Kurucu sınıfın kur metodu Bilgisayar tipinde bir nesne oluşturup döndürmektedir.
