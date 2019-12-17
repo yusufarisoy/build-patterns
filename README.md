@@ -10,5 +10,7 @@ daha sağlam, daha az karışık ve kolay güncellenebilir yapar.
 ![FactoryDesignClass](https://github.com/yusufarisoy/yazilim-mimarisi-ve-tasarimi/blob/master/FactoryDesignPatternClass.png)
 
 Yukarıda örnek uygulamanın sınıf diyagramı verilmiştir. Bilgisayar arayüzü oluşturulmuş ve 3 metot taslak olarak tanımlanmıştır. Bilgisayar arayüzünden de Server ve PC sınıfları türetilmiştir. Sınıfa göre dönecek tür ve bilgiler BilgisayarFactory Fabrika Yordamı tarafından kararlaştırılır. Nesne oluşturma işlemini istemcinin yapılmaması istenmektedir ve kodlama buna göre yapılmıştır. 
-![BilgisayarFactory](/Desktop/N.Y.P/Mimari Java/bilgisayarFactory.png)
+
+![BilgisayarFactory](https://github.com/yusufarisoy/yazilim-mimarisi-ve-tasarimi/blob/master/bilgisayarFactory.png)
+
 Burada Get_Bilgisayar metodu işi üstlenir ve nesneyi oluşturur. Sınıf içerisinde yalnızca nesne oluşturmak zorunlu değildir, nesne yaratma ile ilgili diğer işlemler de burada yapılarak bir arada yazılabilir.
