@@ -14,3 +14,11 @@ Yukarıda örnek uygulamanın sınıf diyagramı verilmiştir. Bilgisayar arayü
 ![BilgisayarFactory](https://github.com/yusufarisoy/yazilim-mimarisi-ve-tasarimi/blob/master/bilgisayarFactory.png)
 
 Burada Get_Bilgisayar metodu işi üstlenir ve nesneyi oluşturur. Sınıf içerisinde yalnızca nesne oluşturmak zorunlu değildir, nesne yaratma ile ilgili diğer işlemler de burada yapılarak bir arada yazılabilir.
+
+
+## Kurucu (Builder) Tasarım Deseni
+Oluşturulacak nesne çok fazla özelliğe sahip olduğu zaman Fabrika ve Soyut Fabrika yordamlarında önemli sorunlar baş gösterir. İstemci tarafından Fabrika sınıflarına geçirilecek çok fazla özellik olacağından hatalarla karşılaşılır.
+Bazı özellikler tercihe bağlı bırakılmak istenirse Fabrika yordamları buna imkan vermemektedir. Kurucu (Builder) Tasarım Deseni ile bu sorunlar önlenmektedir. Kurucu sınıfın yapıcı fonksiyonunda bütün gerekli özellikler verilmelidir.
+Ayrıca tercihe bağlı özellikler için Kurucu sınıf metotlara sahip olmalıdır.
+
+
