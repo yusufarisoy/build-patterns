@@ -21,7 +21,6 @@ Oluşturulacak nesne çok fazla özelliğe sahip olduğu zaman Fabrika ve Soyut 
 Bazı özellikler tercihe bağlı bırakılmak istenirse Fabrika yordamları buna imkan vermemektedir. Kurucu (Builder) Tasarım Deseni ile bu sorunlar önlenmektedir. Kurucu sınıfın yapıcı fonksiyonunda bütün gerekli özellikler verilmelidir.
 Ayrıca tercihe bağlı özellikler için Kurucu sınıf metotlara sahip olmalıdır.
 
-
 ![BuilderDesignClass](https://github.com/yusufarisoy/yazilim-mimarisi-ve-tasarimi/blob/master/BuilderDesignPatternClass.png)
 
 Örnek uygulamanın sınıf diyagramı yukarıda verilmiştir. Bir Bilgisayar sınıfı oluşturulmuş ve bir de statik BilgisayarKurucu sınıfı oluşturulmuştur. Nesne yaratma işlemini gerekli ve isteğe bağlı parametrelerle kurucu sınıf oluşturmaktadır.
@@ -29,3 +28,16 @@ Ayrıca tercihe bağlı özellikler için Kurucu sınıf metotlara sahip olmalı
 ![BuilderDesignKur](https://github.com/yusufarisoy/yazilim-mimarisi-ve-tasarimi/blob/master/builderKur.png)
 
 Kurucu sınıfın kur metodu Bilgisayar tipinde bir nesne oluşturup döndürmektedir.
+
+
+## Vekil (Proxy) Tasarım Deseni
+Vekil tasarım deseni, structural grubuna ait oluşturulması karmaşık veya zaman alan işlemlerin kontrolünü sağlamada kullanılır.Proxy tasarım deseni çalışma maliyeti yüksek işlemlerin olduğu yapılarda, web servisi kullanılan yapılarda, operasyonun gerçekleştirilmesinden önce hazırlık yapılması veya ön işlem yapılması durumlarında kullanılır. Uygulanışı basit bir tasarım desenidir.
+Tasarımda bazı sınıfların, nesnelerin veya işlemlerin görevlerini ve süreçteki işlevsel hallerini bir başka nesne üzerinde kontrol edebilir ve sorumluluğu bu nesneye yükleyebiliriz. Daha net bir ifadeyle, nesnelerin süreçteki vekaletini başka bir sınıfa devredebiliriz. Sınıf diyagramı aşağıda görülmektedir. 
+
+![ProxyDesignClass](https://github.com/yusufarisoy/yazilim-mimarisi-ve-tasarimi/blob/master/ProxyDesignPattern.png)
+
+Örnek uygulamada bir interface oluşturulmuş ve connectTo() fonksiyonunun taslağı verilmiştir. RealInternet sınıfında aşırı yükleme yapılarak bağlanma işlemi simüle edilmiştir. ProxyInternet sınıfında java.util.List import edilmiş ve yasaklanan sitelerin adresleri listeye eklenmiştir. Aşağıda görüldüğü gibi, eğer bağlanılacak adres yasaklı listede mevcut ise exception atılması sağlanmıştır. 
+
+![ConnectToOverride](https://github.com/yusufarisoy/yazilim-mimarisi-ve-tasarimi/blob/master/connectTo.png)
+
+Vekil desenin avantajlarından ilki güvenliktir. Aynı nesnenin iki kez oluşturulmasının önüne geçilir ve bu durum gereksiz hafıza kullanımının önüne geçmektedir. Böylece uygulamanın performansı da iyileştirilmiş olur. Ayrıca vekil sınıf bağlanılan adresi doğru olmasını, remote code kullanarak garantiler.
