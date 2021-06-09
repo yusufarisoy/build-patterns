@@ -1,5 +1,5 @@
-## Yazılım Mimarisi ve Tasarımı
-Yazılım Mimarisi ve Tasarımı Dersi Proje Ödevi
+## Tasarım Desenleri
+Yazılım Mimarisi ve Tasarımı için hazırlanmış build patterns
 
 ## Factory Method Tasarım Deseni
 Bu tasarım deseni bir süper sınıfa sahip olduğumuz ve bu sınıftan çoklu sayıda başka sınıf türeteceğimiz zaman, alt sınıflardan yalnız bir tanesinden nesne oluşturulacaksa, kullanılır. Hangi alt sınıftan nesne oluşturulacağı kararı
